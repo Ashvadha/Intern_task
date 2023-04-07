@@ -51,6 +51,50 @@ HACKLAB Q2(1).ipynb file contains code for Question-2 Task-1.
 
 HACKLAB Q2(2).ipynb file contains code for Question-2 Task-2.
 
-HL Question-2 Report.pdf is the summary report for Question-2 comparing task 1 and 2.
-
 Bonus_LinkedList.c file has the code for Bonus Question
+
+Report for Question 2 is attached below
+
+
+
+
+
+
+
+QUESTION 2 REPORT
+
+
+
+Task 1:
+
+REPORT :
+I chose to train a YOLOv5 model on my dataset of people at an industrial site. The dataset was annotated using the Roboflow website. To measure the accuracy of the model, I used the mAP (Mean Average Precision) metric.
+After training the YOLOv5 model, I achieved an mAP of 79.8%, with a precision of 91.7% and a recall of 76.7%. These results indicate that the model performs well in detecting people at an industrial site.
+
+TRAINING GRAPH:
+ ![image](https://user-images.githubusercontent.com/72346875/230638428-a8d23c4b-37a3-4d62-8803-dfac2d509906.png)
+
+SAMPLE DETECTION:
+![image](https://user-images.githubusercontent.com/72346875/230638452-284a02e5-dd66-4ff0-a027-e1a59346003a.png)
+
+ 
+
+Task 2:
+
+
+REPORT :
+	To improve the performance of my YOLOv5 model for detecting people at an industrial site, I used data augmentation techniques such as flipping and rotating to generate up to 800 images. I then split the dataset into 70% for training, 20% for validation, and 10% for testing.
+After training the model using this approach, I achieved an mAP of 58.2%, with a precision of 74.4% and a recall of 50.9%. These results indicate that the model has room for improvement in its ability to accurately detect people in the images.
+
+TRAINING GRAPH:
+ ![image](https://user-images.githubusercontent.com/72346875/230638518-0df26270-e684-44d6-882e-425e74c9e7af.png)
+
+SAMPLE DETECTION:
+![image](https://user-images.githubusercontent.com/72346875/230638583-a61c5610-5837-45f1-89f2-834e61348ae9.png)
+ 
+
+SUMMARY:
+The first approach I used involved annotating the dataset using the Roboflow website and training a YOLOv5 model on the annotated data. The model achieved an mAP of 79.8%, with a precision of 91.7% and a recall of 76.7%.
+In the second approach, I used data augmentation techniques such as flipping and rotating to generate up to 800 images. I then split the dataset into 70% for training, 20% for validation, and 10% for testing. After training the model using this approach, I achieved an mAP of 58.2%, with a precision of 74.4% and a recall of 50.9%.
+Comparing these results, we can see that the first approach resulted in significantly higher mAP, precision, and recall scores compared to the second approach. This suggests that the first approach, which involved using an existing tool to annotate the dataset and training the model on the annotated data, was more effective in achieving accurate person detection. However, the second approach did involve data augmentation, which can be a useful technique for improving model performance when limited data is available.
+
